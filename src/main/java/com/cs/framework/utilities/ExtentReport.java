@@ -32,7 +32,6 @@ public class ExtentReport {
         screenShotPathMap.put((int) (long) (Thread.currentThread().getId()), path);
     }
 
-
     public static synchronized ExtentTest getFeature() {
         return (ExtentTest) extentFeatureMap.get((int) (long) (Thread.currentThread().getId()));
     }
